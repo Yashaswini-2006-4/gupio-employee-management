@@ -1,119 +1,219 @@
 # Gupio Employee Management System
 
-A full-stack web application for managing employee records with CRUD operations, search, filtering, and a responsive dashboard. Built as part of the Gupio Campus Placement Development Practical Assignment.
+A full-stack Employee Management System developed as part of a technical assignment for Gupio. The application provides employee record management, database integration, validation, and an interactive dashboard enhanced with additional analytics and productivity features.
 
-## 🚀 Live Demo
+## 🌐 Live Demo & Project Links
 
-- **Frontend:** https://gupio-employee-management.vercel.app
-- **Backend API:** https://gupio-employee-management.onrender.com
-- **GitHub Repository:** https://github.com/Yashaswini-2006-4/gupio-employee-management
+**Live Application (Frontend):**
+https://gupio-employee-management.vercel.app/
 
-## ✨ Features
+**Backend API (Render):**
+https://gupio-employee-management.onrender.com/
 
-- **Dashboard:** View employee records in an organized interface.
-- **Add Employees:** Create new employee records with form validation.
-- **View Employee Details:** Access individual employee information.
-- **Edit Employees:** Update existing employee records.
-- **Delete Employees:** Remove employee records when no longer needed.
-- **Search:** Find employees by name or email.
-- **Filtering:** Filter employee records by department and employment status.
-- **Data Persistence:** Store employee information in MongoDB.
-- **Validation and Error Handling:** Handle invalid inputs and API errors.
-- **Responsive Interface:** Use the application across desktop and mobile screen sizes.
+**Employees API Endpoint:**
+https://gupio-employee-management.onrender.com/api/employees
 
-## 🛠️ Technology Stack
+**GitHub Repository:**
+https://github.com/Yashaswini-2006-4/gupio-employee-management
 
-### Frontend
-- React
-- Vite
-- JavaScript
-- CSS
-- Fetch API for backend communication
+- **Frontend Deployment:** Vercel
+- **Backend Deployment:** Render
+- **Database:** MongoDB Atlas
 
-### Backend
-- Node.js
-- Express.js
-- REST API
-- Mongoose
+## 📌 Project Overview
 
-### Database
-- MongoDB Atlas
+The goal of this project is to build an employee management application with a React frontend, a Node.js and Express backend, and MongoDB for persistent data storage.
 
-### Deployment
-- Vercel — Frontend
-- Render — Backend
+In addition to implementing the core employee management requirements, the project includes extra features to improve usability, data visualization, and productivity.
 
-## 📁 Project Structure
+## ✅ 1. Core Assignment Requirements
+
+### Employee CRUD Operations
+
+- **Create:** Add new employee records.
+- **Read:** Retrieve and view employee information.
+- **Update:** Modify existing employee details.
+- **Delete:** Remove employee records.
+
+### Employee Data Model and Database
+
+- Implement an Employee data model using Mongoose.
+- Store employee records in MongoDB.
+- Persist changes to the database.
+- Retrieve employee data through backend API endpoints.
+
+### REST API Development
+
+- Implement API endpoints for employee creation, retrieval, updating, and deletion.
+- Connect the React frontend to the Express backend.
+- Handle API requests and responses.
+
+### Input Validation and Error Handling
+
+- Validate employee input before processing requests.
+- Handle duplicate email addresses.
+- Handle invalid input and unsuccessful requests.
+- Provide appropriate feedback for application operations.
+
+### Documentation and Deployment
+
+- Maintain project documentation in GitHub.
+- Deploy the frontend and backend.
+- Configure the application to connect to the deployed API and database.
+
+## ✨ 2. Additional Features Implemented
+
+The following features extend the core assignment and improve the application's functionality.
+
+### 📊 Employee Analytics Dashboard
+
+- Display employee statistics.
+- Track active and inactive employees.
+- Visualize employment-status distribution.
+- Calculate total monthly payroll.
+- Calculate average monthly salary.
+- Display employee distribution by department through visual bar charts.
+
+### 🌙 Dark and Light Mode
+
+- Switch between light and dark themes.
+- Apply theme styling across the dashboard.
+- Save the selected theme preference in the browser.
+
+### 📥 Export Employee Data to CSV
+
+- Download employee records as a CSV file.
+- Export employee names, email addresses, departments, positions, monthly salaries, and employment statuses.
+- Export the records currently displayed after search and filtering.
+
+### 🔍 Search and Filtering
+
+- Search employee records.
+- Filter employees by department.
+- Filter employees by employment status.
+- Update the displayed records and related analytics according to the active filters.
+
+### 🎨 Dashboard UI and User Experience
+
+- Create a modern employee dashboard.
+- Organize employee records in a structured table.
+- Use modals for employee creation, editing, and viewing details.
+- Provide employee status indicators and summary cards.
+- Support responsive layouts for different screen sizes.
+
+## 🛠️ 3. Technology Stack
+
+| Component | Technologies |
+|---|---|
+| Frontend | React.js, Vite |
+| Styling | CSS |
+| Backend | Node.js, Express.js |
+| Database | MongoDB Atlas |
+| ODM | Mongoose |
+| API | REST API |
+| Deployment | Vercel, Render |
+| Version Control | Git, GitHub |
+
+## 🏗️ 4. Application Architecture
+
+The application follows a client-server architecture.
+
+1. **Frontend:** React provides the employee management interface and dashboard.
+2. **Backend:** Express.js handles API requests and employee operations.
+3. **Database:** MongoDB stores employee records, accessed through Mongoose.
+4. **Integration:** The frontend communicates with the backend through HTTP requests.
+5. **Deployment:** The frontend is hosted on Vercel and the backend on Render.
+
+## 📁 5. Project Structure
 
 ```text
 gupio-employee-management/
-├── backend/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── .env
-│   ├── package.json
-│   └── server.js
 ├── frontend/
-│   ├── public/
 │   ├── src/
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   └── index.css
+│   └── package.json
+├── backend/
 │   ├── package.json
 │   └── ...
-├── .gitignore
 └── README.md
 ```
 
-## ⚙️ Getting Started
+The backend may contain additional files and folders according to the implementation.
+
+## 🚀 6. Live Deployment
+
+### Frontend — React Application
+
+The frontend is deployed on Vercel and provides the employee management interface, analytics dashboard, theme switching, search and filtering, and CSV export functionality.
+
+**Live Application:**
+
+https://gupio-employee-management.vercel.app/
+
+### Backend — REST API
+
+The backend is deployed on Render using Node.js and Express.js. It handles employee-related API requests and connects to MongoDB for data storage.
+
+**Backend URL:**
+
+https://gupio-employee-management.onrender.com/
+
+**Employees API Endpoint:**
+
+https://gupio-employee-management.onrender.com/api/employees
+
+### GitHub Repository
+
+The complete project source code is available on GitHub.
+
+**Repository URL:**
+
+https://github.com/Yashaswini-2006-4/gupio-employee-management
+
+## ⚙️ 7. Running the Project Locally
 
 ### Prerequisites
 
-Make sure you have installed:
-
 - Node.js and npm
-- MongoDB Atlas account or a MongoDB connection string
+- MongoDB Atlas account or a MongoDB instance
 - Git
 
-### 1. Clone the repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/Yashaswini-2006-4/gupio-employee-management.git
 cd gupio-employee-management
 ```
 
-### 2. Set up the backend
+### Start the Backend
+
+Navigate to the backend directory and install the dependencies:
 
 ```bash
 cd backend
 npm install
 ```
 
-Create a `.env` file inside the `backend` directory:
+Configure the required backend environment variables in a `.env` file, including the MongoDB connection string and server port.
 
-```env
-MONGODB_URI=your_mongodb_connection_string
-PORT=5000
-```
-
-Replace `your_mongodb_connection_string` with your own MongoDB connection string.
-
-Start the backend:
+Start the backend using the appropriate script in `backend/package.json`, for example:
 
 ```bash
 npm run dev
 ```
 
-If your `package.json` does not contain a `dev` script, use the start command configured in that file, such as `npm start`.
+### Start the Frontend
 
-### 3. Set up the frontend
-
-Open a second terminal from the project root:
+Open another terminal and navigate to the frontend directory:
 
 ```bash
 cd frontend
 npm install
 ```
 
-Create a `.env` file inside `frontend` if required and configure the backend URL:
+Configure the frontend API URL if required:
 
 ```env
 VITE_API_URL=http://localhost:5000
@@ -125,86 +225,39 @@ Start the frontend:
 npm run dev
 ```
 
-Open the local URL printed by Vite, usually `http://localhost:5173`.
+Open the local URL displayed by Vite in your browser.
 
-For local development, make sure the frontend API configuration points to your local backend. For deployment, use the deployed backend URL.
+**Security:** Keep database credentials and other secrets in environment variables. Never commit them to GitHub.
 
-## 🔌 API Overview
+## 🎯 8. Project Highlights
 
-The backend provides REST API endpoints for employee management.
+- Implemented full-stack employee management functionality.
+- Integrated a React frontend with an Express REST API.
+- Used MongoDB for persistent data storage.
+- Added input validation and duplicate-email handling.
+- Built an employee analytics dashboard.
+- Implemented persistent dark/light theme preferences.
+- Added CSV export functionality.
+- Integrated search and department/status filtering.
+- Deployed the frontend and backend online.
+- Documented the project and source code using GitHub.
 
-| Method | Endpoint | Purpose |
-|---|---|---|
-| GET | `/api/health` | Check backend and database status |
-| GET | `/api/employees` | Retrieve employee records |
-| GET | `/api/employees/:id` | Retrieve a specific employee |
-| POST | `/api/employees` | Create an employee |
-| PUT | `/api/employees/:id` | Update an employee |
-| DELETE | `/api/employees/:id` | Delete an employee |
+## 🔮 9. Potential Future Enhancements
 
-**Base URL:** `https://gupio-employee-management.onrender.com`
-
-## 🗃️ Employee Data Model
-
-Employee records may include the following fields:
-
-| Field | Type | Description |
-|---|---|---|
-| `name` | String | Employee's full name |
-| `email` | String | Employee's email address |
-| `department` | String | Employee's department |
-| `position` | String | Employee's job position |
-| `salary` | Number | Employee's salary |
-| `status` | String | Active or inactive status |
-| `createdAt` | Date | Record creation time |
-| `updatedAt` | Date | Last update time |
-
-The actual fields and validation rules are defined by the backend employee model.
-
-## 🔐 Environment Variables and Security
-
-- Store database connection strings in environment variables.
-- Do not commit `.env` files or database credentials to GitHub.
-- Configure `VITE_API_URL` in the frontend deployment environment.
-- Configure `MONGODB_URI` in the backend deployment environment.
-- Ensure the `.gitignore` file excludes sensitive environment files.
-
-## ☁️ Deployment
-
-### Frontend — Vercel
-
-Deploy the `frontend` directory using Vercel and configure:
-
-```env
-VITE_API_URL=https://gupio-employee-management.onrender.com
-```
-
-Redeploy the frontend after changing environment variables.
-
-### Backend — Render
-
-Deploy the backend service on Render. Configure the required environment variables, including `MONGODB_URI`, and ensure the start command matches the backend configuration.
-
-## 🧪 Testing Checklist
-
-- [ ] Add a new employee.
-- [ ] View the employee list.
-- [ ] Open an individual employee's details.
-- [ ] Edit an existing employee.
-- [ ] Delete an employee.
-- [ ] Search by name or email.
-- [ ] Filter by department or status.
-- [ ] Test required-field validation.
-- [ ] Verify that employee data persists after refreshing the page.
-- [ ] Verify that the deployed frontend communicates with the deployed backend.
-
-## 🎯 Project Objective
-
-The objective of this project is to demonstrate full-stack development skills by connecting a React frontend, Express REST API, and MongoDB database to build a functional employee management application.
+- User authentication and role-based access control.
+- Pagination for large employee datasets.
+- Advanced reporting and additional analytics.
+- Automated backend and frontend testing.
+- PDF report generation.
 
 ## 👩‍💻 Author
 
 **Yashaswini**
 
-- GitHub: https://github.com/Yashaswini-2006-4
-- Project Repository: https://github.com/Yashaswini-2006-4/gupio-employee-management
+Computer Science and Engineering Student
+
+Interested in full-stack development and building practical web applications.
+
+---
+
+*Developed as a technical assignment for Gupio and extended with additional dashboard, analytics, and data-export functionality.*
